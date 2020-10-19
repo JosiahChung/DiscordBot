@@ -2,7 +2,8 @@ module.exports = {
   name: 'pingAN',
   description: "good night (A)", 
   execute(message){
-    message.channel.send(':whale::whale::whale::whale::whale::whale::whale::whale::whale::whale:') 
+    const tagUser = message.mentions.users.first() || message.member.user;
+    message.channel.send(`@${tagUser.username}:whale::whale::whale::whale::whale::whale::whale::whale::whale::whale:`) 
   }
 
 }

@@ -2,7 +2,10 @@ module.exports = {
   name: 'pingGN',
   description: "good night", 
   execute(message){
-    message.channel.send(message.author + 'say good night :sleeping:') 
+      const tagUser = message.mentions.users.first() || message.member.user;
+      message.channel.send(`Good night @${tagUser.username} :sleeping::sleeping::sleeping::sleeping::sleeping:`);
+    
+ 
   }
 
 }

@@ -39,17 +39,24 @@ client.on('message', message => {
     else if(message.content.startsWith(`${prefix} g?`)){
         client.commands.get('pingQG').execute(message);
     }
-    else if(message.content.startsWith(`${prefix} JN`)){
+    else if(message.content.startsWith(`${prefix} jn`)){
         client.commands.get('pingJN').execute(message);
     }
-    else if(message.content.startsWith(`${prefix} AN`)){
+    else if(message.content.startsWith(`${prefix} an`)){
         client.commands.get('pingAN').execute(message);
     }
-    else if(message.content.startsWith(`${prefix} GN`)){
+    else if(message.content.startsWith(`${prefix} gn`)){
         client.commands.get('pingGN').execute(message);
     }
-    
-
+    else if(message.content.startsWith(`${prefix} cn`)){
+        client.commands.get('pingCN').execute(message);
+    }
+   /* else if(message.content.startsWith(`${prefix} omw`)){
+        client.commands.get('pingOMW').execute(message);
+    }*/
+    else if(message.content.startsWith(`${prefix} og`)){
+        client.commands.get('pingOG').execute(message);
+    }
 })
 
 client.login(token);
