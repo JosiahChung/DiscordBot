@@ -51,9 +51,9 @@ client.on('message', message => {
     else if(message.content.startsWith(`${prefix} cn`)){
         client.commands.get('pingCN').execute(message);
     }
-   /* else if(message.content.startsWith(`${prefix} omw`)){
+    else if(message.content.startsWith(`${prefix} omw`)){
         client.commands.get('pingOMW').execute(message);
-    }*/
+    }
     else if(message.content.startsWith(`${prefix} og`)){
         client.commands.get('pingOG').execute(message);
     }

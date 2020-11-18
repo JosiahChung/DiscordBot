@@ -4,11 +4,11 @@ module.exports = {
   name: 'pingLOLF',
   description: "On My Way(with a gif)", 
   execute(message){
-        //var responseIndex = Math.floor((Math.random() * 7) + 1);
+        var responseIndex = Math.floor((Math.random() * 7) + 1);
 
-        //if(responseIndex = 1){
+        if(responseIndex = 1){
           message.channel.send('https://gph.is/g/ZWw57vo')
-         /* .catch(()=>{
+          .catch(()=>{
             message.channel.send('crap!!')
           })
         }
@@ -48,7 +48,7 @@ module.exports = {
              message.channel.send('crap!!')
            })
         } 
-      */
+
   }
 
 }
